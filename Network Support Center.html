@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Network Support Center</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1220;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111c32;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #00d4ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #101d36, #07101e);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #00d4ff;
+        }
+
+        .hero p {
+            color: #b7c3d4;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .service {
+            background: #111c32;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #233451;
+        }
+
+        .service h3 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+
+        .support-box {
+            background: #111c32;
+            padding: 35px;
+            margin-top: 50px;
+            border-radius: 15px;
+        }
+
+        .support-box h2 {
+            margin-bottom: 25px;
+            color: #00d4ff;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border-radius: 7px;
+            border: 1px solid #344867;
+            background: #091323;
+            color: white;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 7px;
+            background: #00d4ff;
+            color: #06101d;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00a8cc;
+        }
+
+        .troubleshooting {
+            margin-top: 50px;
+        }
+
+        .troubleshooting h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+        }
+
+        .check {
+            background: #111c32;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            background: #070d18;
+            color: #8f9caf;
+        }
+
+        @media(max-width: 700px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        DUVAL <span> INDUSTRIES</span>
+    </div>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#support">Support</a>
+        <a href="#troubleshooting">Troubleshooting</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Network <span>Technical Support</span></h1>
+
+    <p>
+        Professional technical support for Internet,
+        Wi-Fi, LAN, routers, DNS, VPN and network connectivity problems.
+    </p>
+</section>
+
+<div class="container">
+
+    <section id="services">
+
+        <h2>Network Support Services</h2>
+
+        <br>
+
+        <div class="services">
+
+            <div class="service">
+                <h3>🌐 Internet</h3>
+                <p>
+                    Troubleshoot slow or unavailable Internet
+                    connections.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>📡 Wi-Fi</h3>
+                <p>
+                    Diagnose wireless connectivity,
+                    authentication and signal problems.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>🔌 LAN</h3>
+                <p>
+                    Resolve Ethernet, switching and
+                    local network connectivity issues.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>🖥️ DNS</h3>
+                <p>
+                    Troubleshoot DNS resolution and
+                    domain connectivity problems.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>🔐 VPN</h3>
+                <p>
+                    Diagnose VPN connection and
+                    authentication problems.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>📶 Router</h3>
+                <p>
+                    Troubleshoot router configuration,
+                    DHCP and connectivity issues.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="support" class="support-box">
+
+        <h2>Submit Network Support Request</h2>
+
+        <form
+            name="network-support"
+            method="POST"
+            data-netlify="true"
+        >
+
+            <input
+                type="hidden"
+                name="form-name"
+                value="network-support"
+            >
+
+            <label>Customer Name</label>
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>Email Address</label>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="customer@example.com"
+                required
+            >
+
+
+            <label>Issue Category</label>
+
+            <select name="category" required>
+
+                <option value="">
+                    Select issue
+                </option>
+
+                <option>Internet Not Working</option>
+                <option>Slow Internet</option>
+                <option>Wi-Fi Problem</option>
+                <option>LAN / Ethernet Problem</option>
+                <option>Router Problem</option>
+                <option>DNS Problem</option>
+                <option>VPN Problem</option>
+                <option>IP Address Problem</option>
+                <option>DHCP Problem</option>
+                <option>Other</option>
+
+            </select>
+
+
+            <label>Priority</label>
+
+            <select name="priority">
+
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+                <option>Critical</option>
+
+            </select>
+
+
+            <label>Device</label>
+
+            <input
+                type="text"
+                name="device"
+                placeholder="Laptop / PC / Router / Mobile"
+            >
+
+
+            <label>Operating System</label>
+
+            <input
+                type="text"
+                name="operating-system"
+                placeholder="Windows 11 / Linux / Android etc."
+            >
+
+
+            <label>IP Address</label>
+
+            <input
+                type="text"
+                name="ip-address"
+                placeholder="Example: 192.168.1.10"
+            >
+
+
+            <label>Problem Description</label>
+
+            <textarea
+                name="description"
+                rows="6"
+                placeholder="Describe the network problem..."
+                required
+            ></textarea>
+
+
+            <label>Error Message</label>
+
+            <textarea
+                name="error-message"
+                rows="4"
+                placeholder="Enter any error message..."
+            ></textarea>
+
+
+            <button type="submit">
+                Submit Support Ticket
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <section id="troubleshooting" class="troubleshooting">
+
+        <h2>Basic Network Troubleshooting</h2>
+
+        <div class="check">
+            ✓ Check Ethernet cable or Wi-Fi connection.
+        </div>
+
+        <div class="check">
+            ✓ Restart the router and affected device.
+        </div>
+
+        <div class="check">
+            ✓ Check IP configuration using <b>ipconfig</b>.
+        </div>
+
+        <div class="check">
+            ✓ Test connectivity using <b>ping</b>.
+        </div>
+
+        <div class="check">
+            ✓ Test DNS using <b>nslookup</b>.
+        </div>
+
+        <div class="check">
+            ✓ Check default gateway connectivity.
+        </div>
+
+        <div class="check">
+            ✓ Verify DHCP configuration.
+        </div>
+
+    </section>
+
+</div>
+
+
+<footer>
+    © 2026 Network Support Center |
+    Contact On Discord :- 502.badgateway
+</footer>
+
+</body>
+</html>
+```
